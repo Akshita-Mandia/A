@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf=8">
+	<link href="style.css" rel="stylesheet"/>
+	<title>Working with JavaScript DOM</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+		<div id="page-banner">
+				<h1 class="title"> Moviemania</h1>
+			<p>Movies for everyone</p>
+		<form id="search-movies">
+			<input type="text" id="myInput" onkeyup="searchfun()" placeholder="Search movies...."/>
+		</form>
+		</div>
+		</header>
+		<div id="movie-list">
+		<h2 class="title"> Movies to watch</h2>
+		<ul id="myUL">
+			<li>
+		<span class="name">Fight Club</span>
+		<span class="delete">delete</span>
+			</li>
+			<li>
+		<span class="name">Harry Portter</span>
+		<span class="delete">delete</span>
+			</li>
+			<li>
+		<span class="name">Secret Life OF Walter Mitty</span>
+		<span class="delete">delete</span>
+			</li>
+			<li>
+		<span class="name">Dark Knight</span>
+		<span class="delete">delete</span>
+			</li>
+		</ul>
+		</div>
+		<form id="add-movie">
+		<input type="checkbox" onclick="hidefun()" id ="hide"/>
+			<label for="hide"> Hide the list</label>
+			<input  id="txtVal" type="text" placeholder="Add a movie..."/>
+			<button onclick=" onclick="addLi()">Add</button>
+		</form>
+		</div>
+		<script src="app.js"></script>
+		</body>
+		</html>
+		
+		
